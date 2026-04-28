@@ -11,7 +11,9 @@ const nextConfig = {
   distDir: 'out',
   // AWS Amplify specific configuration
   generateEtags: false,
-  // Remove basePath for Amplify deployment
+  // Ensure compatibility with Amplify
+  assetPrefix: undefined,
+  basePath: undefined,
 }
 
 export default nextConfig
