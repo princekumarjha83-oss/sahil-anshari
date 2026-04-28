@@ -3,7 +3,7 @@ frontend:
   phases:
     preBuild:
       commands:
-        - npm install
+        - npm ci
     build:
       commands:
         - npm run build
@@ -14,14 +14,3 @@ frontend:
   cache:
     paths:
       - node_modules/**/*
-  customHeaders:
-    - pattern: '**/*'
-      headers:
-        - key: Cache-Control
-          value: 'no-cache, no-store, must-revalidate'
-        - key: Pragma
-          value: 'no-cache'
-  customRewrites:
-    - source: /<(?!.*\.html|.*\.js|.*\.css|.*\.png|.*\.jpg|.*\.gif|.*\.svg|.*\.ico).*>/
-      target: /index.html
-      status: 200
