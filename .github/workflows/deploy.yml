@@ -3,8 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [ master ]
-  pull_request:
-    branches: [ master ]
+  workflow_dispatch:
 
 jobs:
   build-and-deploy:
@@ -36,6 +35,7 @@ jobs:
       run: npm run build
       env:
         NODE_ENV: production
+        NEXT_PUBLIC_BASE_PATH: '/sahil-anshari'
         
     - name: Setup Pages
       uses: actions/configure-pages@v4
