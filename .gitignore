@@ -14,3 +14,9 @@ next.user-config.*
 node_modules
 .next/
 .DS_Store
+
+# Amplify specific
+amplify/
+#amplify/#current-cloud-backend
+#amplify/.config/local-aws-info
+#amplify/backend/.temp
