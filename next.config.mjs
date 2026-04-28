@@ -8,8 +8,6 @@ const nextConfig = {
   },
   output: 'export',
   trailingSlash: true,
-  basePath: '/sahil-anshari',
-  assetPrefix: '/sahil-anshari',
   distDir: 'out',
 }
 
